@@ -15,7 +15,6 @@ function App() {
     e.preventDefault();
     newVoice && setList([...list, newVoice]);
     setNewVoice("");
-    console.log(list);
   };
 
   const onCancelClick = (e) => {
