@@ -1,0 +1,12 @@
+.to-do-list-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .to-do-list-item span {
+    font-family: "Cabin Sketch", cursive;
+    padding: 0 2px;
+    
+  }
+  

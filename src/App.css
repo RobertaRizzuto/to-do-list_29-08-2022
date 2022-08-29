@@ -1,38 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #252324 white;
+  font-family: "Raleway", sans-serif;
+} /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(219, 219, 223, 0.089);
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #252324c0;
+  border-radius: 10px;
+}
+
 .App {
+  color:white;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1518378379207-3418372afea3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: "Rock Salt", cursive;
+  padding: 0px 20px;
+  background-color: #25232411;
+  
+}
+.input:checked + span {
+  text-decoration: line-through;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.aggiungi {
+  padding: 15px 20px;
+  background-color: rgb(218, 217, 116);
+  
+}
+
+.form {
+  position: relative;
+  top: -25px;
+}
+
+@media (max-width: 500px) {
+  .input {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .aggiungi {
+    padding: 10px;
   }
 }
